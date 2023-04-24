@@ -1,0 +1,44 @@
+---
+type: page
+title: Projects
+date: 2023-04-24
+---
+
+# Projects
+
+Here are some projects I've worked on in both personal and professional settings. 
+
+import Image from 'next/image'
+
+### Vercel (this website)
+I used Vercel to get this portfolio site up and running in an afternoon. While I wouldn't call myself a web developer Vercel works similar to Astronomer and Platform9 in that it provides an easy way to run scalable and reliable websites while providing some great tools for developer productivity (local dev, git integration, etc.).
+
+<Image
+  src="/images/vercel.png"
+  alt="Vercel dashboard for mattray.xyz"
+  width={1125}
+  height={750}
+  priority
+  className="next-image"
+/>
+
+This portfolio is built with **Next.js** and a library called [Nextra](https://nextra.vercel.app/). It allows you to write Markdown and focus on the _content_ of your portfolio.
+
+[GitHub ↗ ](https://github.com/mdray/mattray-xyz)
+
+---
+
+### Astronomer
+Astronomer is designed to manage and run Airflow. I worked with a group of colleauges to build out scale testing as we were targeting larger and larger customers. Our goal was to see how many tasks we could run while maintaining an acceptable scheduling delay. 
+
+This project uses a Prom/Grafana stack for measuring performance and the Astro CLI with a dynamic task to run load through the system. 
+
+<Image
+  src="/images/astro.png"
+  alt="Photo"
+  width={1125}
+  height={750}
+  priority
+  className="next-image"
+/>
+[GitHub ↗ ](https://github.com/mdray/astro-dev-tls-prom-grafana)
