@@ -6,11 +6,37 @@ date: 2023-04-24
 
 # Projects
 
-Here are some projects I've worked on in both personal and professional settings. 
+Highlighting some projects I've worked on (and hope to coninue working on) recently. 
 
 import Image from 'next/image'
 
-### Vercel (this website)
+### News-GPT
+I've been wanting to dive into the hype around Chat GPT a bit and it turned out to be a fun project. This was a fun project. I learned some new things about APIs and got to play with technologies I don't use every day. 
+
+News-GPT does a few things:
+1. Queries a public NewsAPI and returns the top results (right now searching for "data analytics")
+2. Sends the top articles to OpenAI where GPT-3.5 writes a breif summary of the key points
+3. Writes the summary to a markdown file and uploads to GitHub 
+4. Bonus: Vercel auto deploys the updated website with the new posts
+
+<Image
+  src="/images/news.png"
+  alt="First fully automated news-gpt update"
+  width={1125}
+  height={750}
+  priority
+  className="next-image"
+/>
+
+Next steps:
+- Fix the search query so that more than just forbes articles show up
+- Automate the script (maybe a Vercel chron job, maybe Airflow, Lambda function, so many options)
+- Find a better way to display the articles (maybe more of a stream with a DB)
+- Allow signup to newsletter
+
+[NEWS-GPT](https://github.com/mdray/news-gpt)
+
+### This Website
 I used Vercel to get this portfolio site up and running in an afternoon. While I wouldn't call myself a web developer Vercel works similar to Astronomer and Platform9 in that it provides an easy way to run scalable and reliable websites while providing some great tools for developer productivity (local dev, git integration, etc.).
 
 <Image
@@ -24,21 +50,8 @@ I used Vercel to get this portfolio site up and running in an afternoon. While I
 
 This portfolio is built with **Next.js** and a library called [Nextra](https://nextra.vercel.app/). It allows you to write Markdown and focus on the _content_ of your portfolio.
 
+Next steps:
+- Customize the css, make it feel modern
+- Add a serverless function
+
 [GitHub ↗ ](https://github.com/mdray/mattray-xyz)
-
----
-
-### Astronomer
-Astronomer is designed to manage and run Airflow. I worked with a group of colleauges to build out scale testing as we were targeting larger and larger customers. Our goal was to see how many tasks we could run while maintaining an acceptable scheduling delay. 
-
-This project uses a Prom/Grafana stack for measuring performance and the Astro CLI with a dynamic task to run load through the system. 
-
-<Image
-  src="/images/astro.png"
-  alt="Photo"
-  width={1125}
-  height={750}
-  priority
-  className="next-image"
-/>
-[GitHub ↗ ](https://github.com/mdray/astro-dev-tls-prom-grafana)

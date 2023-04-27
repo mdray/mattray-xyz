@@ -1,9 +1,10 @@
 ---
 type: posts
 title: Posts
-date: 2021-03-18
+date: 2023-04-27
 ---
 
 # Posts
 
-Right now this is just generic, something interesting to come soon ;)
+Now the home page of [NEWS-GPT](https://github.com/mdray/news-gpt)! \
+_more updates to come_
